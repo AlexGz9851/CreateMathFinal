@@ -88,6 +88,15 @@ header.masthead .masthead-content .masthead-subheading {
 .contenido{
   font-size: 150%;
 }
+.texto-blanco{
+  color:#ffffff;
+}
+.texto-rosa{
+  color:#F465AB;
+}
+.actividades{
+  background-color: #07544F;
+}
 .bg-primary {
   background-color: #ee0979 !important;
 }
