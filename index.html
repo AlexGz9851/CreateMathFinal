@@ -19,7 +19,10 @@
     <link href="css/one-page-wonder.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+
+    <!-- AniCollection.css library -->
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
+
 
   <body>
 
@@ -58,30 +61,34 @@
           <!--h1 class="masthead-heading mb-0">CREATE MATH</h1-->
           <div class="col-lg-12">
             <div class="p-1">
-              <img class="img-fluid" src="img/logo.png" alt="CREATE MATH" width="500rem">
+              <img class="img-fluid" src="img/logo.png" alt="CREATE MATH" width="500rem" data-anijs="if: mouseover, do: zoomIn animated">
             </div>
           </div>
-          <h2 class="masthead-subheading mb-0" style="color: #000">Transmitiendo el amor por las matemáticas.</h2>
-          <a href="#Conocenos" class="btn btn-primary btn-xl rounded-pill mt-5">Conocenos</a>
+          <div class="col-lg-12" >
+            <div class="p-1" data-anijs="if: mouseover, do: bounce animated">
+          	  <h2 class="masthead-subheading mb-0" style="color: #000" >Transmitiendo el amor por las matemáticas.</h2>
+          	</div>
+          </div>
+          <a href="#Conocenos" class="btn btn-primary btn-xl rounded-pill mt-5" data-anijs="if: mouseover, do: rubberBand animated">Conocenos</a>
         </div>
       </div>
     </header>
 
     <section id="Conocenos">
       <div class="container ">
-        <div class="row align-items-center">
+        <div class="row ">
           <div class="col-lg-6 order-lg-2">
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/01.jpeg" alt="">
+              <img class="img-fluid rounded-circle" src="img/01.jpeg" alt="Nuestro Equipo" data-anijs="if: mouseenter, do: shake animated">
             </div>
           </div>
-          <div class="col-lg-6 order-lg-1">
-            <div class="p-5">
-              <h2 class="display-4">¿Quiénes somos?</h2>
-              <p class="contenido">Somos un grupo estudiantil del Tec de Monterrey campus Guadalajara que se dedica a compartir nuestra pasión, expericencias y conocimientos en matemáticas con estudiantes de educación básica.</br>
+          <div class="col-lg-6 order-lg-1" id="ConocTxt">
+            <div class="p-5" >
+              <h2 class="display-4" data-anijs="if: mouseenter, on:#ConocTxt, do: fadeInDown animated">¿Quiénes somos?</h2>
+              <p class="contenido" data-anijs="if: mouseenter, on:#ConocTxt, do: fadeInDown animated">Somos un grupo estudiantil del Tec de Monterrey campus Guadalajara que se dedica a compartir nuestra pasión, expericencias y conocimientos en matemáticas con estudiantes de educación básica.</br>
               Estamos convencidos de que la sociedad necesita agentes de cambio, los cuales, podemos encontrar en niños y adolescentes interesados, a través de experiencias de aprendizaje dinámicas y cercanas a la realidad, más allá de los conocimientos adquiridos durante su educación básica.</p>
             </div>
-          <div id="accordion">
+          <div id="accordion" data-anijs="if: mouseenter,  do: bounce animated">
             <div class="card">
               <div class="card-header" id="headingOneMV" style="background-color: #12C0B7">
                 <h5 class="mb-0">
@@ -125,14 +132,16 @@
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/a3.jpeg" alt="">
-              <img class="img-fluid rounded-circle" src="img/a2.jpeg" alt="">
-              <img class="img-fluid rounded-circle" src="img/a1.jpeg" alt="">
+              <img class="img-fluid rounded-circle" src="img/a3.jpeg" alt="Diego dando clases" data-anijs="if: mouseenter, do: pulse animated">
+              <p></p>
+              <img class="img-fluid rounded-circle" src="img/a2.jpeg" alt="" data-anijs="if: mouseenter, do: rubberBand animated">
+              <p></p>
+              <img class="img-fluid rounded-circle" src="img/a1.jpeg" alt="" data-anijs="if: mouseenter, do: shake animated">
             </div>
           </div>
           <div class="col-lg-6">
             <div class="p-5">
-              <h2 class="display-4 texto-rosa">Actividades</h2>
+              <h2 class="display-4 texto-rosa" data-anijs="if: mouseenter, on:#Actividades, do: fadeInDown animated">Actividades</h2>
               <h4 class="display-6 texto-blanco"><i></t></br>Entrenamientos para OMM</i></h2>
               <p class="contenido texto-blanco">Ofrecemos entrenamientos para la preparación de alumnos en la olimpiada de matemáticas, una vez por semana en las siguentes escuelas:</br>
               Secundaria General 67 Juan José Arreola.</br>
@@ -153,12 +162,12 @@
         <div class="row align-items-center">
           <div class="col-lg-6 order-lg-2">
             <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/logros.jpeg" alt="">
+              <img class="img-fluid rounded-circle" src="img/logros.jpeg" alt="medallas" data-anijs="if: mouseenter, do: rubberBand animated">
             </div>
-            <p class="engancha"></br>Formando pequeños amantes de la ciencia ¡Y vamos por más!</br></p>
+            <p class="engancha" data-anijs="if: mouseenter, on:#Logros, do: fadeInDown animated">Formando pequeños amantes de la ciencia ¡Y vamos por más!</br></p>
            	<p class="contenido">Estos son los principales <strong>retos</strong> a los que nos enfrentamos actualmente.</p>
 
-			<div id="accordion">
+			<div id="accordion" data-anijs="if: mouseenter,  do: bounce animated">
 			  <div class="card">
 			    <div class="card-header" id="headingOneR" style="background-color: #12C0B7">
 			      <h5 class="mb-0">
@@ -219,16 +228,16 @@
 			<p class="contenido"></br></p>
           </div>
           <div class="col-lg-6 order-lg-1">
-            <div class="p-5">
-              <h2 class="display-4">Logros y retos</h2>
-              <p class="engancha">Porque tenemos la mirada en las estrellas: ¡Vamos conquistando cielos!</br></br></p>
-              <p class="contenido">Estos son las <strong>metas que hemos alcanzado</strong> como equipo a lo largo de nuestro desarrollo:</p>
+            <div class="p-5 ">
+              <h1 class="display-4" data-anijs="if: mouseover, do: bounce animated; if: mouseenter, on:#Logros, do: fadeInDown animated">Logros y retos</h1>
+              <p class="engancha" data-anijs="if: mouseenter, on:#Logros, do: fadeInDown animated">Porque tenemos la mirada en las estrellas: ¡Seguiremos conquistando cielos!</br></br></p>
+              <p class="contenido"></br>Estos son las <strong>metas que hemos alcanzado</strong> como equipo a lo largo de nuestro desarrollo:</p>
 
-			<div id="accordion">
+			<div id="accordion" data-anijs="if: mouseenter,  do: bounce animated">
 			  <div class="card">
 			    <div class="card-header" id="headingOneL" style="background-color: #12C0B7">
 			      <h5 class="mb-0">
-			        <button class="btn btn-link btn-lr" data-toggle="collapse" data-target="#collapseOneL" aria-expanded="true" aria-controls="collapseOneL">
+			        <button class="btn btn-info btn-lr" data-toggle="collapse" data-target="#collapseOneL" aria-expanded="true" aria-controls="collapseOneL">
 			          Medallas OMM fase estatal 2016
 			        </button>
 			      </h5>
@@ -243,7 +252,7 @@
 			  <div class="card">
 			    <div class="card-header" id="headingTwoL" style="background-color: #12C0B7">
 			      <h5 class="mb-0">
-			        <button class="btn btn-link collapsed btn-lr" data-toggle="collapse" data-target="#collapseTwoL" aria-expanded="false" aria-controls="collapseTwoL">
+			        <button class="btn btn-info collapsed btn-lr" data-toggle="collapse" data-target="#collapseTwoL" aria-expanded="false" aria-controls="collapseTwoL">
 			          Medallas OMM fase estatal 2017
 			        </button>
 			      </h5>
@@ -257,7 +266,7 @@
 			  <div class="card">
 			    <div class="card-header" id="headingThreeL" style="background-color: #12C0B7">
 			      <h5 class="mb-0">
-			        <button class="btn btn-link collapsed btn-lr" data-toggle="collapse" data-target="#collapseThreeL" aria-expanded="false" aria-controls="collapseThreeL">
+			        <button class="btn btn-info collapsed btn-lr" data-toggle="collapse" data-target="#collapseThreeL" aria-expanded="false" aria-controls="collapseThreeL">
 			          Premio 3D
 			        </button>
 			      </h5>
@@ -271,7 +280,7 @@
 			  <div class="card">
 			    <div class="card-header" id="headingFourL" style="background-color: #12C0B7">
 			      <h5 class="mb-0">
-			        <button class="btn btn-link collapsed btn-lr" data-toggle="collapse" data-target="#collapseFourL" aria-expanded="false" aria-controls="collapseFourL">
+			        <button class="btn btn-info collapsed btn-lr" data-toggle="collapse" data-target="#collapseFourL" aria-expanded="false" aria-controls="collapseFourL">
 			          Incubadora de proyectos sociales.
 			        </button>
 			      </h5>
@@ -296,18 +305,18 @@
 
           <div class="col-lg-8">
             <div class="p-7">
-              <h2 class="display-4 texto-negro">Contáctanos</h2>
-              <p class="engancha-big"></t></br>Siguenos en nuestras redes sociales. </br>Manda un mensaje.</br>
+              <h2 class="display-4 texto-negro" data-anijs="if: mouseenter, on:#Contactanos, do: fadeInDown animated;if: mouseover, do: shake animated">Contáctanos</h2>
+              <p class="engancha-big" data-anijs="if: mouseenter, on:#Contactanos, do: fadeInDown animated"></t></br>Siguenos en nuestras redes sociales. </br>Se aceptan likes y abrazos.</br>
                Estamos deseosos por saber de ti.</br></br></p>
             </div>
           </div>
           <div class="col-lg-3">
           	<div class="p-2">
-        	  <a  href="https://www.instagram.com/createmath3.1416/?hl=es-la" class="btn btn-light btn-xl btn-social btn-inst" style="color:#ffffff;">
+        	  <a  href="https://www.instagram.com/createmath3.1416/?hl=es-la" class="btn btn-light btn-xl btn-social btn-inst" style="color:#ffffff;" data-anijs="if: mouseenter, do: shake animated">
     			<i class="fa fa-instagram" style="font-size: 200%"></i>  Instagram   
   			  </a>
   			  <p></br></p>
-        	  <a  href="https://www.facebook.com/CreateMath/" class="btn btn-light btn-xl btn-social btn-fb" style="color:#ffffff;">
+        	  <a  href="https://www.facebook.com/CreateMath/" class="btn btn-light btn-xl btn-social btn-fb" style="color:#ffffff;" data-anijs="if: mouseenter, do: shake animated">
     			<i class="fa fa-facebook" style="font-size: 200%"></i>  Facebook   
   			  </a>  			  
   			</div>
@@ -328,7 +337,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
   </body>
 
 </html>
