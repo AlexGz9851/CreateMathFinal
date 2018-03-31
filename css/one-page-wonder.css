@@ -37,8 +37,22 @@ h6 {
 .navbar-custom .navbar-brand {
   text-transform: uppercase;
   font-size: 1rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
   font-weight: 700;
+}
+.btn-mv{
+  font-size: 200%;
+  color:#000;
+  padding: 0;
+  border: none; 
+  background: none;
+}
+.btn-lr{
+  font-size: 120%;
+  color:#000;
+  padding: 0;
+  border: none; 
+  background: none;
 }
 
 .navbar-custom .navbar-nav .nav-item .nav-link {
@@ -59,7 +73,16 @@ header.masthead {
   background-attachment: scroll;
   background-size: cover;
 }
-
+.btn-fb{
+  background-color:#3b5998;
+}
+.btn-inst{
+   background: linear-gradient(to right, #fbad50 , #cd486b,#8a3ab9);
+}
+.btn-social{
+  font-size: 150%;
+  color:#ffffff;
+}
 header.masthead .masthead-content {
   z-index: 1;
   position: relative;
@@ -88,8 +111,20 @@ header.masthead .masthead-content .masthead-subheading {
 .contenido{
   font-size: 150%;
 }
+.engancha{
+  font-size: 200%;
+  font-family: arial;
+}
+.engancha-big{
+  font-size: 280%;
+  font-family: arial;
+}
 .texto-blanco{
   color:#ffffff;
+}
+.bAc{
+  text-decoration:none;
+  font-family: sans-serif;
 }
 .logros-y-retos{
   background-color: #A6E7E4;
@@ -99,6 +134,9 @@ header.masthead .masthead-content .masthead-subheading {
 }
 .actividades{
   background-color: #07544F;
+}
+.contactanos{
+  background-color: #fff;
 }
 .bg-primary {
   background-color: #ee0979 !important;
@@ -130,4 +168,7 @@ header.masthead .masthead-content .masthead-subheading {
 
 .btn-secondary:focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+}
+section {
+  padding-top: 2.5rem;
 }
