@@ -171,4 +171,8 @@ header.masthead .masthead-content .masthead-subheading {
 }
 section {
   padding-top: 2.5rem;
+  padding-bottom: 1rem;
+}
+.box-title{
+  font-size: 1000%;
 }
