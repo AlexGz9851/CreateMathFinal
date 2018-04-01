@@ -41,7 +41,7 @@ h6 {
   font-weight: 700;
 }
 .btn-mv{
-  font-size: 200%;
+  font-size: 150%;
   color:#000;
   padding: 0;
   border: none; 
@@ -172,7 +172,4 @@ header.masthead .masthead-content .masthead-subheading {
 section {
   padding-top: 2.5rem;
   padding-bottom: 1rem;
-}
-.box-title{
-  font-size: 1000%;
 }
